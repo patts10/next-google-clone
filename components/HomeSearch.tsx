@@ -13,7 +13,7 @@ export const HomeSearch = () => {
   const handleSubmit = (e: any) => {
     e.preventDefault()
     if (!input) return
-    router.push(`/search?web'searchTerm=${input}`)
+    router.push(`/search/web?searchTerm=${input}`)
   }
 
   const randomSearch = async (e: any) => {
@@ -23,7 +23,7 @@ export const HomeSearch = () => {
       .then((res) => res.json())
       .then((data) => {
         if (!data[0]) return
-        router.push(`/search?web'searchTerm=${data[0]}`)
+        router.push(`/search/web?searchTerm=${data[0]}`)
       })
       setRandomSearchLoading(false)
   }
