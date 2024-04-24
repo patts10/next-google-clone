@@ -1,6 +1,6 @@
 import { SearchHeader } from "@/components"
 
-import '../../globals.css'
+import '../globals.css'
 
 interface LayoutProps {
   children: React.ReactNode
